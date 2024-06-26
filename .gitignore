@@ -1,0 +1,8 @@
+/.env
+/alembic.ini
+/architecture.png
+/SCHEMA.png
+/Запросы.png
+/.venv/
+/migrations/
+/.idea/
