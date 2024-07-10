@@ -3,10 +3,8 @@ from typing import Mapping
 from sqlalchemy import select, insert, delete, update
 from sqlalchemy.orm import Session
 
-from src.database import engine
-from src.models.products import Product as ProductModel
-from src.models.categories import Category as CategoryModel
-from schemas.products import ProductCreateRequest, ProductCreateResponse
+from app.src.database import engine
+from app.src.models.products import Product as ProductModel
 
 
 class ProductRepository:

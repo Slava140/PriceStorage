@@ -1,8 +1,8 @@
 /.env
-/alembic.ini
 /architecture.png
 /SCHEMA.png
 /Запросы.png
 /.venv/
-/migrations/
 /.idea/
+__pycache__/
+/app/migrations/versions

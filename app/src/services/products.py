@@ -2,11 +2,11 @@ from typing import List
 
 from pydantic import ValidationError
 
-from repositories.products import ProductRepository
-from repositories.categories import CategoryRepository
-from schemas.products import (ProductCreateRequest, ProductCreateResponse,
-                              ProductReadResponse,
-                              ProductUpdateRequest, ProductUpdateResponse,)
+from app.src.repositories.products import ProductRepository
+from app.src.repositories.categories import CategoryRepository
+from app.src.schemas.products import (ProductCreateRequest, ProductCreateResponse,
+                                      ProductReadResponse,
+                                      ProductUpdateRequest, ProductUpdateResponse,)
 
 """
 Тут должна быть бизнес-логика

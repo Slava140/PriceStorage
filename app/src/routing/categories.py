@@ -1,10 +1,8 @@
-import time
-
 from fastapi import APIRouter, status, Response, HTTPException
 from starlette.responses import JSONResponse
 
-from schemas.categories import CategoryCreateRequest, CategoryUpdateRequest
-from depends import get_category_service
+from app.src.schemas.categories import CategoryCreateRequest, CategoryUpdateRequest
+from app.src.depends import get_category_service
 
 router = APIRouter(prefix="/categories", tags=["categories"])
 service = get_category_service()

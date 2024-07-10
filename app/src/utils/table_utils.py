@@ -3,7 +3,7 @@ from typing import Type
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
-from src.database import engine, Base
+from database import Base
 
 
 def is_id_exists(session: Session, orm_model: Type[Base], target_id: int, id_field_name: str = 'id') -> bool:

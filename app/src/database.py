@@ -1,6 +1,6 @@
 from colorama import Fore
 from sqlalchemy.engine import create_engine
-from src.config import settings
+from config import settings
 from sqlalchemy.orm import DeclarativeBase, sessionmaker
 
 

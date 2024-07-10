@@ -1,11 +1,11 @@
 from fastapi import APIRouter, status, Response
 from fastapi.responses import JSONResponse
 
-from schemas.errors import ErrorResponse
-from schemas.products import (ProductCreateRequest, ProductCreateResponse,
-                              ProductReadResponse,
-                              ProductUpdateRequest, ProductUpdateResponse)
-from depends import get_product_service
+from app.src.schemas.errors import ErrorResponse
+from app.src.schemas.products import (ProductCreateRequest, ProductCreateResponse,
+                                      ProductReadResponse,
+                                      ProductUpdateRequest, ProductUpdateResponse)
+from app.src.depends import get_product_service
 
 router = APIRouter(prefix="/products", tags=["products"])
 service = get_product_service()
