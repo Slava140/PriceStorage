@@ -1,8 +1,8 @@
-from app.src.repositories.categories import CategoryRepository
-from app.src.services.categories import CategoryService
+from src.repositories.categories import CategoryRepository
+from src.services.categories import CategoryService
 
-from app.src.repositories.products import ProductRepository
-from app.src.services.products import ProductService
+from src.repositories.products import ProductRepository
+from src.services.products import ProductService
 
 product_repository = ProductRepository()
 product_service = ProductService(product_repository)

@@ -1,8 +1,8 @@
 import uvicorn
 from fastapi import FastAPI
-from app.src.routing.products import router as products_router
-from app.src.routing.categories import router as categories_router
-from app.src.database import Base, engine
+from src.routing.products import router as products_router
+from src.routing.categories import router as categories_router
+from src.database import Base, engine
 
 Base.metadata.create_all(bind=engine)
 app = FastAPI(openapi_url="/core/openapi.json", docs_url="/core/docs")

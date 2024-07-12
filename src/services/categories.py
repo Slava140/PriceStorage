@@ -1,7 +1,7 @@
 from typing import Mapping
 
-from app.src.repositories.categories import CategoryRepository
-from app.src.schemas.categories import CategoryCreateRequest, CategoryUpdateRequest
+from src.repositories.categories import CategoryRepository
+from src.schemas.categories import CategoryCreateRequest, CategoryUpdateRequest
 
 """
 Тут должна быть бизнес-логика
