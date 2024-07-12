@@ -1,11 +1,11 @@
 from fastapi import APIRouter, status, Response
 from fastapi.responses import JSONResponse
 
-from app.src.schemas.errors import ErrorResponse
-from app.src.schemas.products import (ProductCreateRequest, ProductCreateResponse,
-                                      ProductReadResponse,
-                                      ProductUpdateRequest, ProductUpdateResponse)
-from app.src.depends import get_product_service
+from src.schemas.errors import ErrorResponse
+from src.schemas.products import (ProductCreateRequest, ProductCreateResponse,
+                                  ProductReadResponse,
+                                  ProductUpdateRequest, ProductUpdateResponse)
+from src.depends import get_product_service
 
 router = APIRouter(prefix="/products", tags=["products"])
 service = get_product_service()
@@ -75,4 +75,3 @@ def delete(product_id: int) -> Response:
         content=content,
         media_type="application/json"
     )
-

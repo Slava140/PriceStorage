@@ -1,5 +1,5 @@
 from pydantic import BaseModel, Field
-from app.src.models.enums import Unit
+from src.models.enums import Unit
 
 
 class CategoryBase(BaseModel):

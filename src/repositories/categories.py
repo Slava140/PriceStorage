@@ -3,8 +3,8 @@ from typing import Mapping
 from sqlalchemy import select, insert, delete, update
 from sqlalchemy.orm import Session
 
-from app.src.database import engine
-from app.src.models.categories import Category as CategoryModel
+from src.database import engine
+from src.models.categories import Category as CategoryModel
 
 
 class CategoryRepository:

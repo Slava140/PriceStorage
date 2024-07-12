@@ -1,8 +1,4 @@
 /.env
-/architecture.png
-/SCHEMA.png
-/Запросы.png
-/.venv/
-/.idea/
+.idea/
 __pycache__/
-/app/migrations/versions
+migrations/versions/
